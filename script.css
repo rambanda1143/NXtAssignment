@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .container {
+    background-color: #2c2c2c;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea,
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note {
+    background-color: #fafafa;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dark-mode .note {
+    background-color: #3a3a3a;
+    border-color: #555;
+}
+
+.note h3 {
+    margin: 0 0 10px;
+}
+
+.note p {
+    white-space: pre-wrap;
+}
+
+.note-buttons {
+    text-align: right;
+}
+
+.note-buttons button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.note-buttons button.delete {
+    background-color: #dc3545;
+}
+
+.note-buttons button.pin {
+    background-color: #ffc107;
+    color: black;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    margin: 10px 0;
+}
